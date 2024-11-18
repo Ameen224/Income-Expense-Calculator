@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hello">
+      <div class="col1">
+        <h2>Enter Your Income</h2>
+        <input id="category1" required type="text" placeholder="category">
+       <input id="income1" type="number" placeholder="income">
+       <button class="sub"   onclick="add()">add</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Catagory</th>
+            <th>Income</th>
+          </tr>
+        </thead>
+        <tbody id="tableincome">
+
+        </tbody>
+      </table>
+    
+        <label for="" style="margin-top: 5px;">Total</label>
+       <button  class="sub" style="margin: 0;"  id="total1"></button>
+      </div>
+
+
+
+
+      <div class="col2">
+        <h2>Enter Your Expense</h2>
+        <input id="category2" type="text" placeholder="category">
+        <input id="expense1" type="number" placeholder="expense">
+        <button class="sub" onclick="expense()">add</button>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Catagory</th>
+              <th>Income</th>
+            </tr>
+          </thead>
+          <tbody id="col2table">
+  
+          </tbody>
+        </table>
+        <label for="" style="margin-top: 5px;">Total</label>
+        <button  class="sub" style="margin: 0;"  id="total2"></button>
+      </div>
+    </div>
+    <div class="balance"><label for="" style="margin-top: 5px;">Total Balance</label>
+      <button  class="sub" style="margin: 0;"  id="balance"></button>
+    </div>
+
+
+    <div class="chartClass">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+  <script src="sample.js"></script>
+</body>
+</html>
